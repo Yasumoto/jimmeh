@@ -1,6 +1,7 @@
 #include <ctime>
 #include <string>
 #include <iostream>
+#include "openrgb/ResourceManager.h"
 
 std::string get_greet(const std::string& who) {
   return "Hello " + who;
