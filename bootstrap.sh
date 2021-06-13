@@ -24,3 +24,6 @@ fi
 curl -L -o ./bazelisk "${FILENAME}"
 
 chmod +x ./bazelisk
+
+# https://gitlab.com/CalcProgrammer1/OpenRGB#linux
+sudo apt install git build-essential libusb-1.0-0-dev libhidapi-dev
