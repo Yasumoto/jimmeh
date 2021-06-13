@@ -13,6 +13,15 @@ void print_localtime() {
 }
 
 int main(int argc, char** argv) {
+  ResourceManager* manager = ResourceManager::get();
+
+  manager->DetectDevices();
+
+  bool enabled = manager->GetDetectionEnabled();
+
+  std::cout << enabled;
+  std::cout << std::endl;
+
   std::string who = "world";
   if (argc > 1) {
     who = argv[1];
